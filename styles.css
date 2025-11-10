@@ -1,0 +1,83 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 10px 80px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+#logo{
+    color: rgb(179, 179, 179);
+    font-size: 32px;
+}
+
+#burgerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    outline: none;
+    border: none;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 60px);
+    box-sizing: border-box;
+    background-color: rgb(100, 154, 183);
+    overflow-y: scroll;
+}
+
+#sampleMain{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 68%;
+    gap: 6px;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 26px;
+    color: rgb(179, 179, 179);
+}
+
+.sampleBox{
+    flex: 0 1 calc(50% - 3px);
+    max-width: 440px;
+    min-width: 300px;
+    height: 425px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(98, 155, 202);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.blueText{
+    font-size: 50px;
+    margin: 0;
+    font-weight: 600;
+    color: rgb(126, 189, 222);
+}
+
+
+@media (max-width: 720px) {
+    .sampleBox{
+        width: 100%; 
+    }
+}
+
